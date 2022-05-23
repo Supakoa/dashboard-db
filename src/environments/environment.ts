@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  SERVICE_URL: '',
+  SERVICE_URL: 'http://206.1.2.162:7755/',
+  SERVICE_PROJECT: 'HealthDatabase',
 };
 
 /*

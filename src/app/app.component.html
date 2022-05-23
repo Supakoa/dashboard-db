@@ -2,19 +2,26 @@
   <h3 class="text-center">Dashboard - Database</h3>
 </div>
 <div class="filter">
-  <div></div>
+  <div class="select-time">
+    <select class="" (change)="onChangeTiming($event)">
+      <option value="5000">5 second</option>
+      <option value="10000">10 second</option>
+      <option value="15000">15 second</option>
+    </select>
+  </div>
 </div>
+<hr />
 <div class="md:container">
   <canvas
     baseChart
     [chartType]="'line'"
     [legend]="true"
-    [datasets]="chartData"
+    [datasets]="chartDataArr"
     [labels]="chartLabels"
     [options]="chartOptions"
+    [colors]="chartColors"
     (chartHover)="onChartHover($event)"
     (chartClick)="onChartClick($event)"
   >
   </canvas>
-  <button (click)="newDataPoint([900, 50, 300])">Add data point</button>
 </div>
