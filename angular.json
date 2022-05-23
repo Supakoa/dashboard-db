@@ -33,7 +33,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.min.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "chart.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -127,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "dashboard-db"
+  "defaultProject": "dashboard-db",
+  "cli": {
+    "analytics": "bb46c367-21d3-44ca-896a-20593d260495"
+  }
 }
